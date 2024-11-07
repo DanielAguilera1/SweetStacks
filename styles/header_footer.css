@@ -14,8 +14,13 @@ html {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+:root {
+  --main-white-color: #fff8e8;
+  --brown-coffe-color: #492824;
+}
+
 .page-header {
-  background-color: #fff8e8;
+  background-color: var(--main-white-color);
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -36,13 +41,12 @@ html {
 .text-domicilios:hover,
 .text-domicilios:focus {
   text-decoration: none;
-  color: #fff8e8;
+  color: var(--main-white-color);
 }
 
 .footer {
-  margin-top: 30px;
   padding: 25px;
-  background-color: #fff8e8;
+  background-color: var(--main-white-color);
   align-items: center;
 }
 
@@ -56,7 +60,7 @@ html {
   display: inline;
   list-style: none;
   text-decoration: none;
-  color: #492824;
+  color: var(--brown-coffe-color);
 }
 
 .footer ul li a {
@@ -65,5 +69,5 @@ html {
 }
 
 .footer ul li a:hover {
-  border: 2px solid #492824;
+  border: 2px solid var(--brown-coffe-color);
 }
