@@ -1,0 +1,53 @@
+.receta {
+  background-image: url(/assets/DulceDeLeche.jpg);
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.receta h2 {
+  font-size: 80px;
+  color: #fff8e8;
+}
+
+.receta h2:hover {
+  text-decoration: underline;
+}
+
+.receta span {
+  color: #fff8e8;
+  font-size: 25px;
+}
+
+.boton-receta {
+  margin-top: 50px;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  background-color: #d1941a;
+  padding: 3px;
+  border: 2px solid #d1941a;
+  display: table;
+  text-align: center;
+}
+
+.boton-receta:hover {
+  background-color: #bb4129;
+  border: 2px solid #bb4129;
+}
+
+.boton-receta span a {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #fff8e8;
+}
