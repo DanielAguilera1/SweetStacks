@@ -24,11 +24,11 @@
 
 .boton-receta {
   margin-top: 50px;
-  height: 70px;
-  width: 70px;
+  height: 75px;
+  width: 75px;
   border-radius: 100%;
   background-color: #d1941a;
-  padding: 3px;
+  padding: 2px;
   border: 2px solid #d1941a;
   display: table;
   text-align: center;
