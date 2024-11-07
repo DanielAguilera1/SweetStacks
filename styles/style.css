@@ -1,25 +1,45 @@
-.receta {
-  background-image: url(../assets/DulceDeLeche.jpg);
+.recetas {
+  position: relative;
+  top: 0;
   width: 100%;
-  height: 88vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.receta h2 {
+#receta-1 {
+  background-image: url(../assets/DulceDeLeche.jpg);
+}
+
+#receta-2 {
+  background-image: url(../assets/WaffleMadame.jpg);
+}
+
+#receta-2 div span {
+  font-weight: 700;
+  color: #492824;
+}
+
+.recetas h2 {
   font-size: 80px;
   color: #fff8e8;
 }
 
-.receta h2:hover {
+#receta-2 div h2 {
+  color: #492824;
+}
+
+.recetas h2:hover {
   text-decoration: underline;
 }
 
-.receta span {
+.recetas span {
   color: #fff8e8;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .boton-receta {
@@ -50,4 +70,28 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: #fff8e8;
+}
+
+.carrusel {
+  overflow: hidden;
+  position: relative;
+  height: 88vh;
+  width: 100%;
+  top: 0;
+}
+
+.flechas-carrucel {
+  color: red;
+  position: absolute;
+  transform: scale(3);
+}
+
+.atras {
+  left: 0;
+  margin-left: 10px;
+}
+
+.adelante {
+  right: 0;
+  margin-right: 10px;
 }

@@ -17,6 +17,7 @@ html {
 :root {
   --main-white-color: #fff8e8;
   --brown-coffe-color: #492824;
+  --brown-hover-color: #3b1f1c;
 }
 
 .page-header {
@@ -30,6 +31,7 @@ html {
 header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .header-domicilio {
@@ -75,4 +77,6 @@ header {
 
 .footer ul li a:hover {
   border: 2px solid var(--brown-coffe-color);
+  background-color: var(--brown-hover-color);
+  color: var(--main-white-color);
 }
