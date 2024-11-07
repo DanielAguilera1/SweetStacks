@@ -27,6 +27,11 @@ html {
   padding-bottom: 20px;
 }
 
+header {
+  position: sticky;
+  top: 0;
+}
+
 .header-domicilio {
   background-color: #bb4129;
   display: flex;
