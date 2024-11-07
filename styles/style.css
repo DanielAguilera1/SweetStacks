@@ -1,3 +1,9 @@
+:root {
+  --main-white-color: #fff8e8;
+  --brown-coffe-color: #492824;
+  --brown-hover-color: #3b1f1c;
+}
+
 .recetas {
   position: relative;
   top: 0;
@@ -9,6 +15,14 @@
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
+  text-wrap: pretty;
+  background-attachment: fixed;
+}
+
+.recetas h2 {
+  font-weight: 700;
+  font-size: 80px;
+  color: var(--main-white-color);
 }
 
 #receta-1 {
@@ -20,17 +34,11 @@
 }
 
 #receta-2 div span {
-  font-weight: 700;
-  color: #492824;
-}
-
-.recetas h2 {
-  font-size: 80px;
-  color: #fff8e8;
+  color: var(--brown-coffe-color);
 }
 
 #receta-2 div h2 {
-  color: #492824;
+  color: var(--brown-coffe-color);
 }
 
 .recetas h2:hover {
@@ -38,8 +46,18 @@
 }
 
 .recetas span {
-  color: #fff8e8;
+  color: var(--main-white-color);
   font-size: 30px;
+}
+
+.receta-texto span:nth-child(1) {
+  text-align: start;
+  text-decoration: underline;
+}
+
+.receta-texto span:nth-child(2) {
+  text-align: center;
+  font-weight: 500;
 }
 
 .boton-receta {
@@ -52,6 +70,12 @@
   border: 2px solid #d1941a;
   display: table;
   text-align: center;
+}
+
+.boton-receta span {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .boton-receta:hover {
@@ -81,17 +105,53 @@ a:focus {
 }
 
 .flechas-carrucel {
-  color: red;
   position: absolute;
   transform: scale(3);
 }
 
 .atras {
   left: 0;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .adelante {
   right: 0;
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 825px) {
+  .recetas h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--main-white-color);
+  }
+
+  .recetas {
+    text-wrap: balance;
+  }
+
+  .receta-texto {
+    margin: 0 50px;
+  }
+
+  .receta-texto span:nth-child(3) {
+    text-align: center;
+  }
+
+  .recetas span {
+    color: var(--main-white-color);
+    font-size: 18px;
+  }
+
+  .flechas-carrucel {
+    transform: scale(2);
+  }
+
+  .atras {
+    margin-left: 0;
+  }
+
+  .adelante {
+    margin-right: 0;
+  }
 }
